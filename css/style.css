@@ -1,0 +1,225 @@
+body{
+	background-image: url("../bilder/crepes.jpg");
+	background-size: cover; 
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	position: relative;	
+}
+.introtext{
+	font-size: 24px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.3);
+	color: black;
+	font-family: 'Fresca', sans-serif;
+}
+
+.welcome{
+	font-size: 35px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.3);
+	color: black;
+	margin: 0;
+}
+
+.navbar-nav>li>a{
+	color: black;
+	font-size: 24px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-brand{
+	color: black;
+	font-size: 30px;
+	background-color: rgba(255, 255, 255, 0.3);
+
+}
+.List{
+	font-size: 24px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.navbar-nav {
+	display:flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.fyrkant{
+	color: black;
+	background-color: rgba(255, 255, 255, 0.3);
+	
+}
+
+.fyrkant a, p{
+	color: black;
+	font-size: 18px;
+}
+
+#comment{
+	color: black;
+
+}
+
+.comments{
+	width: 15%;
+	margin: auto;
+	text-align: center;
+	margin-top: 500px;
+	margin-bottom: 20px;
+}
+.fyrkant div {
+	padding: 50px;
+	display: none;
+	padding: 5px;
+	text-align: center;
+	background-color: #e5eecc;
+	border: solid 1px #c3c3c3;
+}
+
+#panel, #panel2, #flip {
+	padding: 5px;
+	text-align: center;
+	background-color: #e5eecc;
+	border: solid 1px #c3c3c3;
+}
+
+#panel {
+	padding: 50px;
+	display: none;
+}
+
+#panel2 {
+	padding: 50px;
+	display: none;
+}
+
+#panel3 {
+	padding: 50px;
+	display: none;
+}
+
+#panel4 {
+	padding: 50px;
+	display: none;
+}
+
+#panel5 {
+	padding: 50px;
+	display: none;
+}
+
+#panel6 {
+	padding: 50px;
+	display: none;
+}
+
+#panel7 {
+	padding: 50px;
+	display: none;
+}
+
+#panel8 {
+	padding: 50px;
+	display: none;
+}
+
+#panel9 {
+	padding: 50px;
+	display: none;
+}
+
+#panel10 {
+	padding: 50px;
+	display: none;
+}
+
+#panel11 {
+	padding: 50px;
+	display: none;
+}
+
+#panel12 {
+	padding: 50px;
+	display: none;
+}
+
+#panel13 {
+	padding: 50px;
+	display: none;
+}
+
+#panel14 {
+	padding: 50px;
+	display: none;
+}
+
+#panel15 {
+	padding: 50px;
+	display: none;
+}
+
+#panel16 {
+	padding: 50px;
+	display: none;
+}
+
+#panel17 {
+	padding: 50px;
+	display: none;
+}
+
+#panel18 {
+	padding: 50px;
+	display: none;
+}
+
+#panel19 {
+	padding: 50px;
+	display: none;
+}
+
+#panel20 {
+	padding: 50px;
+	display: none;
+}
+
+#panel21 {
+	padding: 50px;
+	display: none;
+}
+
+#panel22 {
+	padding: 50px;
+	display: none;
+}
+
+#panel23 {
+	padding: 50px;
+	display: none;
+}
+
+#panel24 {
+	padding: 50px;
+	display: none;
+}
+
+#panel25 {
+	padding: 50px;
+	display: none;
+}
+
+#panel26 {
+	padding: 50px;
+	display: none;
+}
+
+#panel27 {
+	padding: 50px;
+	display: none;
+}
+
+#panel28 {
+	padding: 50px;
+	display: none;
+}

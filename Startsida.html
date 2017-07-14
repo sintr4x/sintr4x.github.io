@@ -1,0 +1,93 @@
+<!-- Tala om att det är html-dokument -->
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+    <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Koppla in Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
+
+    <!-- Koppla in och JQuery Bootstrap javascript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script>
+    <!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil --> 
+    <script type="text/javascript" src="js/funktion.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fresca" rel="stylesheet">
+    <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+    <title>Pannkaksrecept.eu</title>
+</head>
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body ng-app="app">
+  <!-- I nav finns alla länkar eller knappar för navigering, tex en menyrad -->
+
+  <div class="container">
+
+    <ul class="nav navbar-nav">
+        <li><a class="navbar-brand" href="Startsida.html">Startsida</a></li>
+        <li><a href="Recept.html">Recept</a></li>
+        <li><a href="Tillbehör.html">Tillbehör</a></li>
+        <li><a href="Om Oss.html">Om Oss</a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+            <p class="welcome">Välkommen</p>
+            <p class="introtext">Här har vi samlat alla recept på pannkakor som vi har testat. Vi tror på att det finns en pannkaka för varje tillfälle. Det gäller bara att hitta den i vår stora samling av recept.</p> 
+        </div>
+    </div>
+</div>
+
+<div class="comments">
+    <div ng-controller="KommentarCtrl">
+    <h3 id="comment">Kommentarer</h3>
+    <!-- Kommentarsfältet -->
+     <div ng-repeat="kommentar in kommentarer">
+        <p><b>{{ kommentar.skribent }}</b> {{ kommentar.text }}</p>
+      </div>
+
+     <form ng-submit="addComment()">
+          <div class="form-group">
+            <input placeholder="Ditt namn" type="text" class="form-control" ng-model="kommentar.skribent">
+         </div>
+         <div class="form-group">
+            <input placeholder="Din kommentar" type="text" class="form-control" ng-model="kommentar.text">
+         </div>
+         <button type="submit" class="btn btn-primary">Kommentera</button>
+     </form>
+    </div>
+</div>
+
+<!--CAPTCHA KOD NÄR VI LÄGGER UPP HEMSIDAN
+
+<title>reCAPTCHA demo: Simple page</title>
+     <script src="https://www.google.com/reCAPTCHA/api.js" async defer></script>
+  </head>
+  <body>
+    <form action="?" method="POST">
+      <div class="g-reCAPTCHA" data-sitekey="your_site_key"></div>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
+-->
+</body>
+</html>

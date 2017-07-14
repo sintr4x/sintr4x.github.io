@@ -1,0 +1,176 @@
+<!-- Tala om att det är html-dokument -->
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+  <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Koppla in Bootstrap css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+  <link rel="stylesheet" type ="text/css" href="css/style.css">
+
+  <!-- Koppla in och JQuery Bootstrap javascript -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- Angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+  <!-- AngularFire -->
+  <script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script>
+  <!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil --> 
+  <!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil -->
+  <script type="text/javascript" src="js/funktion.js"></script>
+
+  <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+  <title>Recept</title>
+</head>
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body>
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li><a class="navbar-brand" href="Startsida.html">Startsida</a></li>
+      <li><a href="Recept.html">Recept</a></li>
+      <li><a href="Tillbehör.html">Tillbehör</a></li>
+      <li><a href="Om Oss.html">Om Oss</a></li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-2" class="fyrkant">
+      <p id="bokstav-a"> A </p>
+      <div id="panel">
+        <a href=""><p> Ananaspannkakor</p></a>
+        <a href=""><p> Amerikanska Pannkakor</p></a>
+      </div>
+      <p id="bokstav-b"> B </p></a>
+      <div id="panel2">
+        <a href=""><p>Bananpannkakor</p></a>
+      </div>
+      <a href=""><p id="bokstav-c"> C </p></a>
+      <div id="panel3">
+
+      </div>
+      <a href=""><p id="bokstav-d"> D </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-e"> E </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-f"> F </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-g"> G </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-h"> H </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-i"> I </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-j"> J </p></a>
+      <div id="panel">
+
+      </div>
+    </div>
+
+    <div class="col-sm-2" class="fyrkant">
+      <a href=""><p id="bokstav-k"> K </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-l"> L </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-m"> M </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-n"> N </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-o"> O </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-p"> P </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-q"> Q </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-r"> R </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-s"> S </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-t"> T </p></a>
+      <div id="panel">
+
+      </div>
+    </div>
+
+    <div class="col-sm-2" class="fyrkant">     
+      <a href=""><p id="bokstav-u"> U </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-v"> V </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-x"> X </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-y"> Y </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-z"> Z </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-å"> Å </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-ä"> Ä </p></a>
+      <div id="panel">
+
+      </div>
+      <a href=""><p id="bokstav-ö"> Ö </p></a>
+      <div id="panel">
+
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+    </div>
+  </div>
+</body>
+</html>
